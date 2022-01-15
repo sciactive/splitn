@@ -1,0 +1,51 @@
+{
+  "name": "@sciactive/splitn",
+  "version": "1.0.0",
+  "description": "A split function that returns [limit] elements, the last being the remainder.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "split",
+    "splitn",
+    "split limit",
+    "split remainder",
+    "string split",
+    "explode"
+  ],
+  "scripts": {
+    "lint:format": "npx prettier --write .",
+    "lint:check": "npx prettier --check .",
+    "clean": "test -d dist && rm -r dist || true",
+    "build": "tsc",
+    "prepare": "husky install && npm run clean && npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sciactive/splitn.git"
+  },
+  "author": "Hunter Perrin <hperrin@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/sciactive/splitn/issues"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.2",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/jest": "^27.4.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.7",
+    "lint-staged": "^12.1.7",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
