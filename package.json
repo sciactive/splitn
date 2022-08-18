@@ -2,9 +2,9 @@
   "name": "@sciactive/splitn",
   "version": "2.0.0",
   "description": "A split function that returns [limit] elements, the last being the remainder.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/es/index.d.ts",
   "keywords": [
     "split",
     "splitn",
@@ -17,7 +17,9 @@
     "format": "npx prettier --write .",
     "lint": "npx prettier --check .",
     "clean": "test -d dist && rm -r dist || true",
-    "build": "tsc",
+    "build": "npm run build:cjs && npm run build:es",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:es": "tsc -p tsconfig.es.json",
     "prepare": "husky install && npm run clean && npm run build",
     "test": "jest",
     "test:watch": "jest --watch"
