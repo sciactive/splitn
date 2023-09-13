@@ -1,6 +1,6 @@
 {
   "name": "@sciactive/splitn",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "A split function that returns [limit] elements, the last being the remainder.",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
