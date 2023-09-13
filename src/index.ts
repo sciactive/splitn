@@ -1,4 +1,4 @@
-export default function splitn(str: string, delimiter: string | RegExp, limit = Infinity) {
+export function splitn(str: string, delimiter: string | RegExp, limit = Infinity) {
   let curStr = str;
   const a = [];
 
@@ -20,3 +20,5 @@ export default function splitn(str: string, delimiter: string | RegExp, limit = 
 
   return a;
 }
+
+export default splitn;
