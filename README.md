@@ -16,6 +16,12 @@ splitn('Some-Header: a-value: 1; another-value: 2;', /:\s*/, 2);
 // ['Some-Header', 'a-value: 1; another-value: 2;']
 ```
 
+# Human Authorship
+
+This project adheres to the [SciActive Human Contribution Policy](HUMAN-CONTRIBUTION-POLICY.md).
+
+[![Seal of Human Authorship](https://sciactive.com/wp-content/uploads/2026/03/Seal-of-Human-Authorship-300.png)](https://sciactive.com/human-contribution-policy/)
+
 # License
 
 Copyright 2022 SciActive Inc
